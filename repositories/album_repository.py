@@ -9,3 +9,7 @@ def save(album):
     result = run_sql(sql, values)
     id = result[0]["id"]
     album.id = id
+
+def delete_all():
+    sql = "DELETE FROM albums"
+    run_sql(sql)

@@ -33,4 +33,6 @@ album_repository.save(country_girl_uncut)
 yr_body_is_nothing = Album("Yr Body Is Nothing", "Minimal Synth", boy_harsher)
 album_repository.save(yr_body_is_nothing)
 
-artist_repository.delete_all()
+# artist_repository.delete_all()
+
+album_repository.delete_all()
