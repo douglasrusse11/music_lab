@@ -35,4 +35,7 @@ album_repository.save(yr_body_is_nothing)
 
 # artist_repository.delete_all()
 
-album_repository.delete_all()
+# album_repository.delete_all()
+
+test_artist = artist_repository.select(brainbombs.id)
+print(test_artist.__dict__)
