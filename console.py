@@ -37,5 +37,8 @@ album_repository.save(yr_body_is_nothing)
 
 # album_repository.delete_all()
 
-test_artist = artist_repository.select(brainbombs.id)
-print(test_artist.__dict__)
+# test_artist = artist_repository.select(brainbombs.id)
+# print(test_artist.__dict__)
+
+test_album = album_repository.select(careful.id)
+print(test_album.__dict__)
