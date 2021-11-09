@@ -49,5 +49,10 @@ album_repository.save(yr_body_is_nothing)
 # albums = album_repository.select_all()
 # print(albums)
 
-albums = artist_repository.albums(boy_harsher)
+# albums = artist_repository.albums(boy_harsher)
+# print(albums)
+
+brainbombs.name = "Brain Bombs"
+artist_repository.update(brainbombs)
+albums = artist_repository.albums(brainbombs)
 print(albums)

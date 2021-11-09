@@ -40,3 +40,8 @@ def albums(artist):
         album = Album(result["title"], result["genre"], artist, result["id"])
         albums.append(album)
     return albums
+
+def update(artist):
+    sql = "UPDATE artists SET name = %(name)s WHERE id = %(id)s"
+    values = {'name': artist.name, 'id': artist.id}
+    run_sql(sql, values)
