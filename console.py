@@ -52,7 +52,12 @@ album_repository.save(yr_body_is_nothing)
 # albums = artist_repository.albums(boy_harsher)
 # print(albums)
 
-brainbombs.name = "Brain Bombs"
-artist_repository.update(brainbombs)
-albums = artist_repository.albums(brainbombs)
+# brainbombs.name = "Brain Bombs"
+# artist_repository.update(brainbombs)
+# albums = artist_repository.albums(brainbombs)
+# print(albums)
+
+careful.genre = "Darkwave"
+album_repository.update(careful)
+albums = artist_repository.albums(boy_harsher)
 print(albums)
