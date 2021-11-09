@@ -20,6 +20,5 @@ class TestAlbum(unittest.TestCase):
     def test_album_1_id_is_None(self):
         self.assertIsNone(self.album_1.id)
 
-    @unittest.skip('')
     def test_album_2_has_id(self):
         self.assertEqual(1, self.album_2.id)
