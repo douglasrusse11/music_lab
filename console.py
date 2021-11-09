@@ -46,5 +46,8 @@ album_repository.save(yr_body_is_nothing)
 # artists = artist_repository.select_all()
 # print(artists)
 
-albums = album_repository.select_all()
+# albums = album_repository.select_all()
+# print(albums)
+
+albums = artist_repository.albums(boy_harsher)
 print(albums)
