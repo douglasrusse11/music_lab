@@ -11,7 +11,6 @@ class TestAlbum(unittest.TestCase):
     def test_album_has_title(self):
         self.assertEqual("Urge to Kill", self.album_1.title)
 
-    @unittest.skip('')
     def test_album_has_genre(self):
         self.assertEqual("Noise Rock", self.album_1.genre)
 
