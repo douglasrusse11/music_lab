@@ -6,7 +6,6 @@ class TestArtist(unittest.TestCase):
         self.artist = Artist("Brainbombs")
         self.assertEqual("Brainbombs", self.artist.name)
 
-    @unittest.skip('')
     def test_artist_id_is_None(self):
         self.artist = Artist("Brainbombs")
         self.assertIsNone(self.artist.id)
