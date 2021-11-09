@@ -43,5 +43,8 @@ album_repository.save(yr_body_is_nothing)
 # test_album = album_repository.select(careful.id)
 # print(test_album.__dict__)
 
-artists = artist_repository.select_all()
-print(artists)
+# artists = artist_repository.select_all()
+# print(artists)
+
+albums = album_repository.select_all()
+print(albums)

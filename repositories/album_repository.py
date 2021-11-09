@@ -22,3 +22,13 @@ def select(id):
         artist = artist_repository.select(result["artist_id"])
         album = Album(result["title"], result["genre"], artist, id)
     return album
+
+def select_all():
+    albums = []
+    sql = "SELECT * FROM albums"
+    results = run_sql(sql)
+    for result in results:
+        artist = artist_repository.select(result["artist_id"])
+        album = Album(result["title"], result["genre"], artist, result["id"])
+        albums.append(album)
+    return albums
