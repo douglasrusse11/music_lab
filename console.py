@@ -62,6 +62,10 @@ album_repository.save(yr_body_is_nothing)
 # albums = artist_repository.albums(boy_harsher)
 # print(albums)
 
-artist_repository.delete(brainbombs)
-artists = artist_repository.select_all()
-print(artists)
+# artist_repository.delete(brainbombs)
+# artists = artist_repository.select_all()
+# print(artists)
+
+album_repository.delete(country_girl_uncut)
+albums = album_repository.select_all()
+print(albums)

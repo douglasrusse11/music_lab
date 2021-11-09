@@ -37,3 +37,8 @@ def update(album):
     sql = "UPDATE albums SET (title, genre, artist_id) = (%(title)s, %(genre)s, %(artist_id)s) WHERE id = %(id)s"
     values = {'title': album.title, 'genre': album.genre, 'artist_id': album.artist.id, 'id': album.id}
     run_sql(sql, values)
+
+def delete(album):
+    sql = "DELETE FROM albums WHERE id = %s"
+    values = [album.id]
+    run_sql(sql, values)
