@@ -57,7 +57,11 @@ album_repository.save(yr_body_is_nothing)
 # albums = artist_repository.albums(brainbombs)
 # print(albums)
 
-careful.genre = "Darkwave"
-album_repository.update(careful)
-albums = artist_repository.albums(boy_harsher)
-print(albums)
+# careful.genre = "Darkwave"
+# album_repository.update(careful)
+# albums = artist_repository.albums(boy_harsher)
+# print(albums)
+
+artist_repository.delete(brainbombs)
+artists = artist_repository.select_all()
+print(artists)

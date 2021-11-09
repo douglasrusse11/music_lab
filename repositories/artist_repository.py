@@ -45,3 +45,8 @@ def update(artist):
     sql = "UPDATE artists SET name = %(name)s WHERE id = %(id)s"
     values = {'name': artist.name, 'id': artist.id}
     run_sql(sql, values)
+
+def delete(artist):
+    sql = "DELETE FROM artists WHERE id = %s"
+    values = [artist.id]
+    run_sql(sql, values)
